@@ -154,7 +154,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 20px 20px;
   color: white;
   border-radius: 15px;
   background: rgb(255, 255, 255);
@@ -164,7 +164,7 @@ button {
     rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #modal-background {
@@ -181,12 +181,35 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (min-width: 576px){
+   .card {
+    margin-bottom: 20px;
+
+  }
+} */
+@media only screen and (max-width: 700px) and (max-width: 991px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
   .card {
     flex-direction: column;
+    text-align: center;
+    
+  }
+}
+/* // Large devices (desktops, 992px and above till next break point) */
+@media (min-width: 992px) {
+  #histories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
+
   }
 }
