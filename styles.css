@@ -7,7 +7,8 @@
 body {
   background-image: url("./background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  background-position: center;
   background-position: left top;
   font-family: "Zilla Slab", serif;
 }
@@ -58,7 +59,7 @@ nav {
 .box-container {
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
