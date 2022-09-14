@@ -6,12 +6,11 @@
 body {
   background-image: url("./bg\ another.jpg");
   background-size: cover;
-  /* background-repeat: no-repeat; */
   background-position: center;
   background-position: left top;
   font-family: "Zilla Slab", serif;
 }
-
+/* Header area style start */
 nav {
   margin-top: 40px;
   padding: 24px;
@@ -46,11 +45,16 @@ nav {
 .nav-menu {
   padding: 0 10px;
 }
+/* Header area style end */
 
+
+/* Blog page style area start */
 .accordion-body, .accordion-button{
   background-color: #202124;
   color:white;
 }
+/* Blog page style area end */
+
 .box-container {
   width: 70%;
   margin: 0 auto;
@@ -225,12 +229,8 @@ button {
   top: 0;
 }
 
-/* @media only screen and (min-width: 576px){
-   .card {
-    margin-bottom: 20px;
 
-  }
-} */
+/* // small and medium devices */
 @media only screen and (max-width: 700px) and (max-width: 991px) {
   .box-container {
     padding: 0 20px;
