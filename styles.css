@@ -4,11 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("./bg\ another.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./bg\ image.png");
+  /* background-size: cover; */
+  /* background-repeat:no-repeat ; */
   background-position: left top;
-  font-family: "Zilla Slab", serif;
 }
 /* Header area style start */
 nav {
