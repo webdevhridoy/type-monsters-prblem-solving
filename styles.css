@@ -237,6 +237,11 @@ button {
   .card {
     flex-direction: column;
     text-align: center;
-
+  }
+  .card-body{
+    text-align: left;
+  }
+  .second-title{
+    margin-top: 30px;
   }
 }
