@@ -39,10 +39,9 @@ nav {
 }
 
 .blog-container {
-  text-align: end;
-  padding-top: 10px;
-  padding-right: 20px;
   padding-top: 50px;
+  width: 70%;
+  margin: 0 auto;
 }
 .blog-container a {
   color: #F4BC1C;
@@ -62,6 +61,7 @@ nav {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 #question {
@@ -247,10 +247,8 @@ button {
     text-align: center;
   }
   .blog-container {
-    text-align: left;
+    text-align: center;
     color: yellow;
-    padding-top: 10px;
-    padding-left: 20px;
   }
 }
 /* // Large devices (desktops, 992px and above till next break point) */
