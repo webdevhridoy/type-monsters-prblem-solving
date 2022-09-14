@@ -3,9 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-image: url("./background.jpg");
+  background-image: url("./bg\ another.jpg");
   background-size: cover;
   /* background-repeat: no-repeat; */
   background-position: center;
@@ -13,10 +12,6 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-body {
-  margin: 0px;
-}
 nav {
   margin-top: 40px;
   padding: 24px;
