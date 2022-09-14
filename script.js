@@ -26,6 +26,7 @@ const typeController = (e) => {
   // Handle backspace press
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
+    // console.log(userText);
     return display.removeChild(display.lastChild);
   }
 
@@ -46,8 +47,9 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
-  }
 
+    errorCount++
+  }
   // check if given question text is equal to user typed text
   if (questionText === userText) {
     gameOver();
@@ -84,8 +86,8 @@ const gameOver = () => {
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
-
   addHistory(questionText, timeTaken, errorCount);
+  // console.log(errorCount);
 
   // restart everything
   startTime = null;
@@ -97,12 +99,13 @@ const gameOver = () => {
 const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
+  // window.location.href = "index.html"
+  window.location.reload()
 };
 
 const start = () => {
   // If already started, do not start again
   if (startTime) return;
-
   let count = 3;
   countdownOverlay.style.display = "flex";
 
@@ -134,6 +137,5 @@ setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
   
-
   document.getElementById("show-time").innerHTML = `${parseInt(startTime) ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);
