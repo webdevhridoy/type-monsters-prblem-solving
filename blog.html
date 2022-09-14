@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Type Monster</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e6707f06ff.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header area start -->
+  <header>
+    <div class="container-fluid">
+      <div class="blog-container pt-5">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+
+  <!-- FAQ Title Area start -->
+  <section class="container">
+    <div class="text-sm-start text-md-center py-2">
+      <h2 class=" fs-4 text-center text-white">Interview Questions about ES6</h2>
+    </div>
+  </section>
+  <!-- FAQ Title Area end -->
+
+
+  <!-- FAQ section start -->
+  <section class="py-5">
+    <div class="container">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button bg-dark text-white bg-dark text-white" type="button"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne">
+              What's the difference between local storage and session storage?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>Local Storage</strong> Local Storage is a web storage method that helps us store data on the
+              client’s computer in the form of key/value pairs in a web browser. The data is stored in local storage for
+              a lifetime unless the user manually deletes it from the browser. It does not expire even when the user
+              closes the window or tab. Instead, the data remains in the browser until and unless the browser's memory
+              is cleared. <br> <br>
+              <strong>Session Storage</strong> The sessionStorage is very similar to the localStorage. Still, the main
+              difference lies in the lifespan as it persists in the browser until its current tab or session is on. Once
+              you close the tab or terminate the session, the data on session storage also gets lost.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              What's the difference between global scope vs block scope in javascript?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Global Scope:</strong> The variables defined outside of any function or curly brackets are known
+              as global variables and have global scope. Global scope means that the variables can be accessed from any
+              part of that program, and any function or conditional state can access that variable. <br> <br>
+              <strong>Block Scope:</strong> Block scope is also a sub-type of local scope. The block scope can be
+              defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of
+              loops, or conditional statements, or something else. You are only allowed to refer to these variables from
+              within the curly brackets {}.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              How is working JavaScript event loop?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body faq-bg-color">
+              <strong>Event Loops:</strong> Event Loop is an advanced-level JavaScript concept, the Event loop is a
+              function of javascript that places the instructions waiting in the event queue to the global execution
+              stack. When you are working with asynchronous execution you have 3 different environments running which
+              are namely: Execution stack, WEB APIs, and event/message queue.
+              <br> <br>
+              When the WEB API finishes executing on the function it places the result onto the Event queue. Whenever
+              the execution stack is empty, the event loop picks up the function in the event queue and places it back
+              into the execution stack. This whole circle is known as the Event Loops in JavaScript.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour">
+              How can we find undefined in various way?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              <strong>Way to find undefined:</strong>
+              <br> <br>
+              1. variable that is not initialized will give undefined <br>
+              2. fundtion with no return. <br>
+              3. parameter that is not passed will be undefined. <br>
+              4. if return has nothing on the right side will return undefind. <br>
+              5.property that does not exist on an object will give you undefind. <br>
+              6. accessing array elements outside of the index range. <br>
+              7. deleting an element inside an array. <br>
+              8. set a value directly to undefined. <br><br> <strong>Let's see some examples:</strong>
+              <br>
+              Boolean: true or false <br>
+              Number: 1, 6.7, 0xFF <br>
+              String: "Gorilla and banana" <br>
+              Symbol: Symbol("name") (starting ES2015) <br>
+              Null: null <br>
+              Undefined: undefined. <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ section start -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
