@@ -244,6 +244,9 @@ button {
     text-align: center;
     color: yellow;
   }
+  #question {
+    font-size: 16px;
+  }
 }
 /* // Large devices (desktops, 992px and above till next break point) */
 @media (min-width: 992px) {
