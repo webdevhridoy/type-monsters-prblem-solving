@@ -247,6 +247,18 @@ button {
   #question {
     font-size: 16px;
   }
+  .accordion-button {
+    font-size: 13px;
+  }
+}
+
+/* footer style start */
+.footer-text {
+  padding: 20px 0;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.3em;
 }
 /* // Large devices (desktops, 992px and above till next break point) */
 @media (min-width: 992px) {
